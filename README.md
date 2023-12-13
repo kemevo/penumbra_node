@@ -77,12 +77,12 @@ pd start
 ```
 ## Konsensus key çekme (not defterine kopyalayın)
 ```
-grep  -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_key.json
+grep -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_key.json
 ```
 ## Yedekleme
 
 ```
-mkdir penumbra_backup &&  cp validator.json $HOME /penumbra/penumbra_backup/validator_backup.toml
+mkdir penumbra_backup && cp validator.json $HOME /penumbra/penumbra_backup/validator_backup.toml
 ````
 ## Ağa yükleme
 
