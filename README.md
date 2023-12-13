@@ -16,13 +16,11 @@ sudo apt install make clang pkg-config libssl-dev -y
 ```
 ## Go kurulumu
 ```
-wget https://go.dev/dl/go1.19.5.linux-amd64.tar.gz
-rm -rv /usr/local/go
-tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
-rm -v go1.19.5.linux-amd64.tar.gz
-echo "export PATH= $PATH :/usr/ local/go/bin: $HOME /go/bin" >> ~/.bash_profile
-source ~/.bash_profile
-go version
+wget -q -O - https://go.dev/dl/go1.19.5.linux-amd64.tar.gz | sudo tar xvzf - -C /usr/local
+```
+```
+eval $(echo 'export PATH=$PATH:/usr/local/go/bin' | sudo tee /etc/profile.d/golang.sh)
+eval $(echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile)
 ```
 
 
