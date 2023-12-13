@@ -11,7 +11,7 @@
 
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install make curl screen tar wget jq build-essential -y 
+sudo apt install git make curl screen tar wget jq build-essential -y 
 sudo apt install make clang pkg-config libssl-dev -y
 ```
 ## Go kurulumu
@@ -44,7 +44,7 @@ git clone https://github.com/cometbft/cometbft.git
 cd cometbft 
 git checkout v0.37.2 
 make install 
-cp $HOME /go/bin/cometbft /usr/local/bin/cometbft
+cp $HOME/cometbft/build/cometbft /usr/local/bin/cometbft
 ````
 ## Reset data ve testnete katılma
 
