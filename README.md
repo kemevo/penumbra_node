@@ -13,6 +13,8 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install make curl screen tar wget jq build-essential -y 
 sudo apt install make clang pkg-config libssl-dev -y
+````
+````
 wget https://go.dev/dl/go1.19.5.linux-amd64.tar.gz ; \ 
 rm -rv /usr/local/go ; \ 
 tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz && \ 
