@@ -14,6 +14,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install git make curl screen tar wget jq build-essential -y 
 sudo apt install make clang pkg-config libssl-dev -y
 ```
+# Seremoni kısmı hariç, önce [buraıyı](https://github.com/kemevo/Penumbra-Seremoni) yapın. Seremoniyi sonra yparsınız.
 ## Go kurulumu
 ```
 wget -q -O - https://go.dev/dl/go1.19.5.linux-amd64.tar.gz | sudo tar xvzf - -C /usr/local
@@ -83,12 +84,25 @@ grep -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_k
 ```
 nano validator.toml
 ```
-> Name kısmını değiştirelim.Diğerlerini kontrol edelim.
+> Name kısmını,false olan yeri true yapalım. değiştirelim.Diğerlerini kontrol edelim.
 
-
+## Başlatma
 ```
 pcli validator definition upload --file validator.toml
 ```
+## Delegate
+> Aşağıdaki komutun çıktısını kopyalayalım.
+```
+pcli validator identity
+````
+```
+pcli tx delegate 1penumbra --to **üstteki çıktı buraya gelecek**
+```
+> Validator listesi
+```
+pcli query validator list -i
+```
+> Bir süre sonra burda isminiz gözükecek
 
 
 
