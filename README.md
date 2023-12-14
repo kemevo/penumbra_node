@@ -107,6 +107,59 @@ pcli query validator list -i
 ```
 > Bir süre sonra burda isminiz gözükecek
 
+## BAZI KOMUTLAR
+> Token gönderme
+
+```
+pcli tx send 10penumbra --to "GIDECEK_ADRES"
+```
+> Delegate & Undelegate
+```
+pcli tx delegate 10penumbra --to "VALIDATOR_ADRES"
+```
+```
+pcli tx undelegate-claim
+```
+> Likitide açma,kapatma,swap 
+```
+pcli tx position order buy 1gm@1penumbra
+#1 gm yi 1 penumbra fiyattan fee olmadan almak için
+```
+```
+pcli tx position order sell 1penumbra@1gm/20bps
+#1 penumbra yi 1 gm fiyattan 20 basepoint fee ödeyerek satmak için
+```
+```
+pcli view balance
+# Açık emirler gözükür
+ Account  Amount
+ 0        1lpnft_opened_plpid1hzrzr2myjw508nf0hyzehl0w0x2xzr4t8vwe6t3qtnfhsqzf5lzsufscqr
+```
+```
+pcli tx position close plpid1hzrzr2myjw508nf0hyzehl0w0x2xzr4t8vwe6t3qtnfhsqzf5lzsufscqr
+# Açık emri kapatmak için
+pcli tx position close-all
+# Hepsini kapatmak için
+```
+```
+pcli tx swap --into gm 1penumbra
+# gm token alır 1 penumbra karşılığında mevcut likitide emirlerinden
+```
+> Oylama
+```
+pcli query governance list-proposals
+# mevcut oylamalar listelenir
+```
+```
+pcli tx vote yes --on 1
+# Delegator olarak oylama 1 için evet oyu kullanır.
+```
+```
+ppcli validator vote yes --on 1
+# Validator(aktif) olarak oylama 1 için evet oyu kullanır.
+```
+
+
 
 
 
