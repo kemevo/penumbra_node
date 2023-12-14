@@ -1,3 +1,5 @@
+# Telegram
+- https://t.me/HerculesNode
 # Penumbra node kurulumu
 ## Sistem gereksinimleri
  - Ubuntu 22.04+
