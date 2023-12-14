@@ -71,11 +71,7 @@ pd start
 ```
 grep -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_key.json
 ```
-## Yedekleme
 
-```
-mkdir penumbra_backup && cp validator.json $HOME /penumbra/penumbra_backup/validator_backup.toml
-````
 ## Ağa yükleme
 
 ### Gerekli tanımalamalar ve çalıştırma
@@ -87,7 +83,7 @@ mkdir penumbra_backup && cp validator.json $HOME /penumbra/penumbra_backup/valid
 ```
 cat validator.toml
 ```
-> Aşağıyı aynen yapıştırın. Consensus_key kısmını kendimize göre değiştirelim. üstte çekmiştik. name, website, description kısımlarını değiştirebilirsiniz. Kaydedip çıkalım.
+> Kontrol edelim.  name, website, description kısımlarını isterseniz değiştirebilirsiniz.
 ````
 # This is a template for a validator definition.
 #
