@@ -68,6 +68,7 @@ cometbft start --home ~/.penumbra/testnet_data/node0/cometbft
 screen -S pd
 pd start
 ```
+> Burdan ctrl+a+d ile çıkalım.
 ## Konsensus key çekme (not defterine kopyalayın)
 ```
 grep -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_key.json
