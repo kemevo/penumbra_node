@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install git make curl screen tar wget jq build-essential -y 
 sudo apt install make clang pkg-config libssl-dev -y
 ```
-# Seremoni kısmı hariç, önce [burayı](https://github.com/kemevo/Penumbra-Seremoni) yapın. Seremoniyi sonra yparsınız.
+# Seremoni kısmı hariç, önce [burayı](https://github.com/kemevo/Penumbra-Seremoni) yapın. Seremoniyi sonra yaparsınız.
 ## Go kurulumu
 ```
 wget -q -O - https://go.dev/dl/go1.19.5.linux-amd64.tar.gz | sudo tar xvzf - -C /usr/local
