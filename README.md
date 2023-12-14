@@ -43,7 +43,8 @@ cd $HOME
 git clone https://github.com/cometbft/cometbft.git 
 cd cometbft 
 git checkout v0.37.2 
-make install 
+make install
+make build
 cp $HOME/cometbft/build/cometbft /usr/local/bin/cometbft
 ````
 ## Reset data ve testnete katılma
