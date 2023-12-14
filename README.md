@@ -81,43 +81,10 @@ grep -A3 pub_key ~/.penumbra/testnet_data/node0/cometbft/config/priv_validator_k
     --file validator.toml
 ```
 ```
-cat validator.toml
+nano validator.toml
 ```
-> Kontrol edelim.  name, website, description kısımlarını isterseniz değiştirebilirsiniz.
-````
-# This is a template for a validator definition.
-#
-# The identity_key and governance_key fields are auto-filled with values derived
-# from this wallet's account.
-#
-# You should fill in the name, website, and description fields.
-#
-# By default, validators are disabled, and cannot be delegated to. To change
-# this, set `enabled = true`.
-#
-# Every time you upload a new validator config, you'll need to increment the
-# `sequence_number`.
+> Name kısmını değiştirelim.Diğerlerini kontrol edelim.
 
-sequence_number = 0
-enabled = false
-name = ''
-website = ''
-description = ''
-identity_key = 'penumbravalid1kqrecmvwcc75rvg9arhl0apsggtuannqphxhlzl34vfamp4ukg9q87ejej'
-governance_key = 'penumbragovern1kqrecmvwcc75rvg9arhl0apsggtuannqphxhlzl34vfamp4ukg9qus84v5'
-
-[consensus_key]
-type = 'tendermint/PubKeyEd25519'
-value = 'HDmm2FmJhLHxaKPnP5Fw3tC1DtlBx8ETgTL35UF+p6w='
-
-[[funding_stream]]
-recipient = 'penumbrav2t1cntf73e36y3um4zmqm4j0zar3jyxvyfqxywwg5q6fjxzhe28qttppmcww2kunetdp3q2zywcakwv6tzxdnaa3sqymll2gzq6zqhr5p0v7fnfdaghrr2ru2uw78nkeyt49uf49q'
-rate_bps = 100
-
-[[funding_stream]]
-recipient = "DAO"
-rate_bps = 100
-````
 
 ```
 pcli validator definition upload --file validator.toml
