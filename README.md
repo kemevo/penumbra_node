@@ -30,7 +30,7 @@ eval $(echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile)
 ## Pd kurulumu
 
 ```
-curl -O -L https://github.com/penumbra-zone/penumbra/releases/download/v0.64.1/pd-x86_64-unknown-linux-gnu.tar.xz
+curl -O -L https://github.com/penumbra-zone/penumbra/releases/download/v0.64.2/pd-x86_64-unknown-linux-gnu.tar.xz
 unxz pd-x86_64-unknown-linux-gnu.tar.xz
 tar -xf pd-x86_64-unknown-linux-gnu.tar
 sudo mv pd-x86_64-unknown-linux-gnu/pd /usr/local/bin/
