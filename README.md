@@ -106,6 +106,7 @@ pcli tx delegate 1penumbra --to **üstteki çıktı buraya gelecek**
 pcli query validator list -i
 ```
 > Bir süre sonra burda isminiz gözükecek
+> Jail olursanız, yeniden toml dosyasını yüklemeniz gerekli(sequence numberı arttırın toml içindeki öyle yükleyin)
 
 ## BAZI KOMUTLAR
 > Token gönderme
